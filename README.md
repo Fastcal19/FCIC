@@ -19,7 +19,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>9-Sep-30</td>
+      <td>9-Sep-25</td>
       <td>139</td>
       <td>MONDE M.Y. SAN CORPORATION</td>
       <td>50% down payment on retrofitting of 4 ut 3200AT ABB Circuit breaker of LVSG 1 & 2 at powerhouse mixing area</td>
