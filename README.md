@@ -3,15 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FCIC</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      height: 100vh;
-    }
-
+  
     /* Sidebar */
     .sidebar {
       width: 220px;
@@ -88,7 +80,7 @@
   <!-- Sidebar -->
   <div class="sidebar">
     <h2 class="logo-box">
-      <img src="fcic logo.png" alt="Logo">
+     
     </h2>
 
     <a href="dashboard.html" target="mainFrame">Home</a>
