@@ -1,42 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My GitHub Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCIC</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f5f5f5;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
     }
-    header {
-      background: #0f8bff;
-      color: white;
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background: #F4A460;
+      color: black;
+      display: flex;
+      flex-direction: column;
       padding: 20px;
     }
-    section {
-      margin: 50px auto;
-      max-width: 600px;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    .sidebar h2 {
+      margin: 0 0 20px;
+      text-align: center;
     }
-    h1 {
-      color: #ff5b00;
+    .sidebar a {
+      color:Black;
+      text-decoration: none;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 6px;
+      display: block;
+      font-weight: bold;
+    }
+    .sidebar a:hover {
+      background: #D3D3D3;
+    }
+
+    /* Main content */
+    .main {
+      flex: 1;
+      background: #FAEBD7;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      background: #F5DEB3;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    iframe {
+      flex: 1;
+      border: none;
+      margin: 20px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo-box {
+      width: 220px;
+      height: 144px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .logo-box img {
+      width: 95%;
+      height: 95%;
+      object-fit: fill;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h2>Welcome to My Website</h2>
-  </header>
-  <section>
-    <h1>Hello World 🌍</h1>
-    <p>This is my first website hosted on GitHub Pages!</p>
-  </section>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2 class="logo-box">
+      <img src="fcic logo.png" alt="Logo">
+    </h2>
+
+    <a href="dashboard.html" target="mainFrame">Home</a>
+    <a href="accounting.html">Accounting</a>
+    <a href="HR.html">Human Resource</a>
+    <a href="reports.html">Reports</a>
+    <a href="users.html">Users</a>
+    
+    <!-- Only these two open in iframe -->
+    <a href="Marketplace.html" target="mainFrame">Marketplace</a>
+    <a href="Inventory.html" target="mainFrame">Inventories</a>
+    
+    <a href="settings.html">Settings</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="main">
+    
+
+    <!-- iframe default loads dashboard.html -->
+    <iframe name="mainFrame" src="dashboard.html"></iframe>
+  </div>
 </body>
 </html>
